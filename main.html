@@ -6,13 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="/img/logo.png" type="image/png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mali:wght@200;300&display=swap" rel="stylesheet">
     <title>Pomodoro</title>
 </head>
 <body>
-    <h1 id="title">Pomodoro Timer</h1>
+        <form action="">
+            <div class="principal">
+                <h1 id="title">Pomodoro Timer</h1>
+                <div class="grid-container">
+                    <div class="grid-item"> <p>Pomodoro</p> </div>
+                    <div class="grid-item2"><input class="numInput" type="number" id="timeX" value="25" min="1"></div>
+                    <div class="grid-item"> <p>Pausa curta</p> </div>
+                    <div class="grid-item2"><input class="numInput" type="number" id="shortPause" value="5" min="1"></div>
+                    <div class="grid-item"> <p>Pausa Longa</p> </div>
+                    <div class="grid-item2"><input class="numInput" type="number" id="longPause" value="15" min="1"></div>
+                    <div class="grid-item"> <p>Repetições</p> </div>
+                    <div class="grid-item2"><input class="numInput" type="number" id="rounds" value="4" min="1"></div>
+                  </div>
+                  <input type="submit" name="" id="send" onclick="enviar()">
+
+            </div>
+            
+        </form>
+
 
 
 
     <script src="./script.js"></script>
 </body>
 </html>
+
+<!--
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+--> 
